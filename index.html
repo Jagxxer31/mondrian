@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .contain{
+      display: grid;
+      size: 748px/748px;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+    } 
+    .contain>*{
+      border: 5px solid;
+    }
+    .r{
+      background-color:#E72F24 ;
+      border-top: 0px;
+      border-left: 0px;
+    
+    }
+    .w1{
+      border-top: 0px;
+      border-right: 0px;
+      background-color:#F0F1EC ;
+      grid-column: span 3 ;
+      
+    }
+    .w2{
+      background-color:#F0F1EC ;
+      grid-row: span 2;
+      border-left: 0px;
+    }
+    .w3{
+      background-color:#F0F1EC ;
+      grid-row: span 2;
+      grid-column: span 2 ;
+    }
+    .w4{
+      background-color:#F0F1EC ;
+      grid-row: span 2 ;
+      border-bottom: 0px;
+      border-right: 0px;
+    }
+    .w5{
+      background-color:#232629;
+      border-bottom: 0px;
+    }
+    .b{
+      background-color:#004592 ;
+      border-right: 0px;
+    }
+    .g{
+      background-color:#F9D01E;
+      border-bottom: 0px;
+    }
+    .y{
+      background-color:#F0F1EC;
+      border-left: 0px;
+      border-bottom: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contain">
+    <div class="r"></div>
+    <div class="w1"></div>
+    <div class="w2"></div>
+    <div class="w3"></div>
+    <div class="b"></div>
+    <div class="w4"></div>
+    <div class="y"></div>
+    <div class="g"></div>
+    <div class="w5"></div>
+  </div>
+
+
+
+</body>
+
+</html>
